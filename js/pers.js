@@ -43,7 +43,7 @@ function display() {
     var container = ""
     for (var i = 0; i < taskList.length; i++) {
         container += `
-         <div class="secColor-bg overflow-hidden d-flex p-3 col-11 rounded-3 align-items-center m-auto mt-4 position-relative animation taskT" data-id="${taskList[i].id}" >
+         <div class="secColor-bg overflow-hidden d-flex p-3 col-11 rounded-3 align-items-center m-auto mt-4 position-relative  taskT" data-id="${taskList[i].id}" >
                         
          <div class="content">
   <label class="checkBox">
@@ -144,7 +144,7 @@ function search(term) {
     for (var i = 0; i < taskList.length; i++) {
         if (taskList[i].oneTask.includes(term.trim()) == true) {
             result += `
-            <div class="secColor-bg overflow-hidden d-flex p-3 col-11 rounded-3 align-items-center m-auto mt-4 position-relative animation"  >
+            <div class="secColor-bg overflow-hidden d-flex p-3 col-11 rounded-3 align-items-center m-auto mt-4 position-relative"  >
                           <div class="content" >
                               <label class="checkBox">
                               <input id="ch1" type="checkbox" onclick="checkbtn()">
