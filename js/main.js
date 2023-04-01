@@ -181,3 +181,8 @@ menuBtn.addEventListener("click", () => {
 // else{
 //     console.log("ksjdfh")
 // }
+document.addEventListener("keydown",()=>{
+    if(event.keyCode === 13){
+        addBtn()
+    }
+})
